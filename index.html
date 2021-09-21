@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selamat Datang!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="WarungTegalSuroboyo.png" style="display: inline-block" />
+        <div class="menu" style="display: inline-block">
+          <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Daftar Kuliner</a></li>
+            <li><a href="#">Artikel</a></li>
+            <li><a href="#">Tentang Kami</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="main">
+      <div class="carou">
+        <div class="carousel">
+          <ul class="slides">
+            <input type="radio" name="radio-buttons" id="img-1" checked />
+            <li class="slide-container">
+              <div class="slide-image">
+                <img src="pecelsemanggi.jpg" />
+              </div>
+            </li>
+            <input type="radio" name="radio-buttons" id="img-2" />
+            <li class="slide-container">
+              <div class="slide-image">
+                <img src="rujakcingur.jpg" />
+              </div>
+            </li>
+            <input type="radio" name="radio-buttons" id="img-3" />
+            <li class="slide-container">
+              <div class="slide-image">
+                <img src="lontongkupang.png" />
+              </div>
+            </li>
+            <ul class="descrip">
+              <li class="dsc carou-3">
+                <p class="title">SUGENG RAWUH!</p>
+                <p class="detail">Pecel Semanggi, Tahu Tek, Lontong Kupang, Rujak Cingur, Rawon, Soto wonten mriki. Menu liyane wonten lan saget dipirsa ing Daftar Kuliner.</p>
+              </li>
+            </ul>
+            <div class="carousel-dots">
+              <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+              <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+              <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+            </div>
+          </ul>
+        </div>
+      </div>
+
+      <aside>
+        <section class="video">
+          Video<br />
+          <iframe
+            width="350"
+            height="200"
+            src="https://www.youtube.com/embed/2dF693xkDC4"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+        </section>
+        <section class="populer">
+          <a href="#">Menu Terpopuler</a>
+          <ul style="margin-top: 0">
+            <li><a href="#">Tahu Tek</a></li>
+            <li><a href="#">Rawon</a></li>
+          </ul>
+        </section>
+        <section class="kontak">
+          <a href="#">Detail Kontak</a>
+          <p>+62 812 345 6789</p>
+        </section>
+      </aside>
+    </div>
+
+    <div class="contents">
+      <section>
+        <article>
+          <figure>
+            <img src="petis.jpg" alt="petis" />
+            <figcaption>Petis</figcaption>
+            <p>
+              petis gurih dari olahan udang dan rempah-rempah pilihan khas
+              Surabaya.
+            </p>
+          </figure>
+        </article>
+        <article>
+          <figure>
+            <img src="krupukikan.jpg" alt="krupuk" />
+            <figcaption>Krupuk Ikan</figcaption>
+            <p>
+              berbagai macam krupuk renyah dan gurih hasil olahan tangkapan laut
+              kenjeran.
+            </p>
+          </figure>
+        </article>
+        <article>
+          <figure>
+            <img src="puyuhtusuk.jpg" alt="puyuh" />
+            <figcaption>Sate Puyuh</figcaption>
+            <p>
+              telur puyuh untuk lauk pelengkap maupun cemilan dengan bumbu yang
+              sedap.
+            </p>
+          </figure>
+        </article>
+        <article>
+          <figure>
+            <img src="usustusuk.jpg" alt="usus" />
+            <figcaption>Sate Usus</figcaption>
+            <p>
+              Olahan usus ayam untuk lauk pelengkap maupun penutup hidangan.
+            </p>
+          </figure>
+        </article>
+      </section>
+    </div>
+
+    <footer>
+      Warung Tegal Suroboyo<br />Jl Raya ITS No 1, Sukolilo, Surabaya<br />+62
+      812 345 6789
+    </footer>
+  </body>
+</html>

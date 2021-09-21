@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+:root {
+  --hitem: rgba(0, 0, 0, 0.76);
+  --abu: #5e5858;
+  --biru: #414a9f;
+
+}
+
+img{
+    border-radius: 20px;
+}
+
+html,body {
+  margin: 0;
+  overflow-x: hidden;
+  width: auto;
+  height: auto;
+  font-family: 'Nunito', sans-serif;
+  background-image: url(lines.png);
+}
+
+header {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  background-color: transparent;
+  left: 0;
+  top: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+header li {
+  padding: 5px;
+  margin: 8px;
+  width: 135px;
+  background-color: var(--abu);
+  display: inline-block;
+  border-radius: 29px;
+  text-align: center;
+  box-shadow: 2px 4px 0 rgb(218, 215, 215);
+}
+
+.carou, aside{
+    display: inline-block;
+    padding:20px;
+    margin: auto 20px;
+}
+
+header img{
+    height:40%;
+    width:40%;
+}
+
+li a {
+  color: white;
+  font-size: 17px;
+}
+
+.contents {
+  margin-top: 2%;
+  text-align: center;
+}
+
+.contents article{
+  border-radius: 20px;
+  box-shadow: 3px 4px 3px grey;
+  background-color: white;
+}
+
+article{
+    width:300px;
+    display:inline-block;
+    position:inherit;
+}
+
+figure img{
+  height:200px;
+  width:200px;
+}
+
+footer {
+  background-color: transparent;
+  color: var(--abu);
+  font-size: 15px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+
+.descrip{
+  width: 310px;
+  display: inline-block;
+  list-style: none;
+  overflow: hidden;
+  padding:0;
+  right:0;
+  bottom:0;
+  left:0;
+  float: right;
+}
+
+.main{
+  align-items: stretch;
+  margin-bottom: 0;
+}
+
+.carousel ul{
+  display: inline-block;
+}
+
+.descrip .dsc{
+  display: block;
+  word-wrap:inherit;
+  width:inherit;
+  height: inherit;
+  position: absolute;
+  bottom:0;
+  padding-right:20px;
+  transition: all .7s ease-in-out;
+  background-color: white;
+}
+
+.populer li a, .kontak p{
+  margin-top:0;
+  font-size: 15px;
+  color:var(--abu);
+}
+
+.title{
+  font-family: 'Jost', sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  color:var(--biru);
+  margin:2px;
+}
+
+.detail{
+  font-size: 20px;
+  color:var(--abu);
+}
+
+figcaption{
+  font-size: 35px;
+  color:var(--biru);
+  font-weight: bold;
+  font-family:'Jost',sans-serif;
+}
+
+aside section a, aside section{
+  text-decoration: none;
+  color:var(--biru);
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.contents p{
+  font-size:20px;
+  color:var(--abu);
+}
+
+.carousel {
+    margin-left: 2%;
+    margin-right:2%;
+}
+
+ul.slides {
+    display: block;
+    position: relative;
+    height: 400px;
+    width: 720px;
+    margin: 0;
+    padding:0;
+    overflow: hidden;
+    list-style: none;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+ul.slides input {
+    display: none; 
+}
+
+
+.slide-container { 
+    display: block; 
+}
+
+.slide-image {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    transition: all .7s ease-in-out;
+}   
+
+.slide-image img {
+    width: 53%;
+    min-width: 53%;
+    height: 100%;
+    border-radius: 0;
+}
+
+
+.carousel-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    z-index: 999;
+    text-align: left;
+}
+
+.carousel-dots .carousel-dot {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.5;
+    margin: 10px;
+}
+
+input:checked + .slide-container .slide-image {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked +  .descrip .dsc {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .carousel-controls label {
+     display: block; 
+}
+
+input#img-1:checked ~ .carousel-dots label#img-dot-1,
+input#img-2:checked ~ .carousel-dots label#img-dot-2,
+input#img-3:checked ~ .carousel-dots label#img-dot-3,
+input#img-1:checked ~ .carousel-dots label#carou-1,
+input#img-2:checked ~ .carousel-dots label#carou-2,
+input#img-3:checked ~ .carousel-dots label#carou-3 {
+	opacity: 1;
+}
+
+
+input:checked + .slide-container .nav label { display: block; }
